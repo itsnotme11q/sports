@@ -1,0 +1,356 @@
+body
+{
+    padding: 0;
+    margin: 0;
+    background: #000000;
+}
+#maincont header
+{
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 1vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 1000000;
+
+}
+#maincont header .logo
+{
+    position: relative;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 00.6s;
+}
+#maincont header ul
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#maincont header ul li
+{
+    position: relative;
+    list-style: none;
+}
+#maincont header ul li a
+{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+#maincont header a
+{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+#maincont header a:hover
+{
+    position: relative;
+    margin: 0 15px;
+    text-decoration:none;
+    color: red;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    font-size: 50px;
+    transition-delay: 0.3s;
+}
+
+#maincont footer
+{
+    background: black;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    height: 1vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 1000000;
+
+}
+#maincont footer .logo
+{
+    position: relative;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 00.6s;
+}
+#maincont footer ul
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#maincont footer ul li
+{
+    position: relative;
+    list-style: none;
+}
+#maincont footer ul li a
+{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+#maincont footer a
+{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+#maincont footer a:hover
+{
+    position: relative;
+    margin: 0 15px;
+    text-decoration:none;
+    color: red;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    font-size: 50px;
+    transition-delay: 0.3s;
+}
+#maincont .container
+{
+    background: #16384c;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+#maincont .container .card
+{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #fff;
+    margin: 20px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+}
+#maincont .container .card:hover
+{
+    height: 420px;
+    
+}
+#maincont .container .card .imgbx
+{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+
+}
+#maincont .container .card .imgbx img
+{
+    max-width: 100%;
+    border-radius: 4px;
+
+}
+#maincont .container .card .content
+{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+#maincont .container .card:hover .content
+{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+
+}
+##maincont section
+{
+    height: 100vh;
+    background: #000;
+    position: relative;
+}
+#maincont section video{
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+}
+#maincont section h1{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    color: #ddd;
+    font-size: 5em;
+    font-family: sans-serif;
+    letter-spacing: 0.2em;
+}
+#maincont section h1 span
+{
+    opacity: 0;
+    display: inline-block;
+    animation: animate 1s linear forwards;
+}
+@keyframes animate
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateY(90deg);
+        filter: blur(10px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0deg);
+        filter: blur(0px);
+    }
+}
+#maincont section h1 span:nth-child(1)
+{
+    animation-delay: 1s;
+}
+#maincont section h1 span:nth-child(2)
+{
+    animation-delay: 1.5s;
+}
+#maincont section h1 span:nth-child(3)
+{
+    animation-delay: 2s;
+}
+#maincont section h1 span:nth-child(4)
+{
+    animation-delay: 2.5s;
+}
+#maincont section h1 span:nth-child(5)
+{
+    animation-delay: 3s;
+}
+#maincont section h1 span:nth-child(6)
+{
+    animation-delay: 3.5s;
+}
+#bl{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: #05020f;
+    z-index: 100000000000000;
+}
+#bl .loader{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #05020f;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(#15b3a3,#ffeb3b,#ff00e0);
+    animation: animate1 0.5s linear infinite;
+}
+@keyframes animate1
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+#bl .loader span
+{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(#14ffe9,#ffeb3b,#ff00e0);
+    animation: animate 0.5s linear infinite;
+}
+#bl .loader span:nth-child(1)
+{
+    filter: blur(5px);
+}
+#bl .loader span:nth-child(2)
+{
+    filter: blur(10px);
+}
+#bl .loader span:nth-child(3)
+{
+    filter: blur(25px);
+}
+#bl .loader span:nth-child(4)
+{
+    filter: blur(50px);
+}
+#bl .loader::after
+{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: #05020f;
+    border-radius: 50%;
+}
+
+
